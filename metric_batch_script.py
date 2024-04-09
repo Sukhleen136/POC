@@ -1,5 +1,8 @@
 # Databricks notebook source
 #widgets for source and target information
+  # Source File Path = /FileStore/metric_data.csv
+  # Target File Path for daily batch = /Filestore/aggregated_metric
+  # source_file_type = csv
 #The source data is having 3 columns (metric name, value, timestamp)
 #this script agreegates the data based on each metric for each single day batch, which can be on week and month as well
 #output file is a parquet file with the columns (metric, batch_date,avg_value,min_value,max_value)
